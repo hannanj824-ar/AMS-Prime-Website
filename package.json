@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node server.cjs",
+    "build": "vite build",
     "dev": "node server.cjs",
     "serve": "node server.cjs",
     "preview": "node server.cjs",
@@ -18,5 +19,8 @@
     "uae"
   ],
   "author": "AMS PRIME LLC FZE",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
 }
