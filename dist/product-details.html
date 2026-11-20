@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Product Details | AMS PRIME LLC FZE | Dubai, UAE</title>
+  <meta name="description" content="Product specifications, materials, and wholesale B2B quote request for uniforms and safety gear by AMS PRIME LLC FZE Dubai UAE." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" crossorigin href="/assets/styles-CLzI4z9k.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- TOPBAR -->
+  <div class="topbar-gradient text-white text-xs py-2.5 px-4 border-b border-orange-500/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="flex items-center gap-1.5 text-slate-200">
+          <i class="fas fa-map-marker-alt text-orange-400"></i> Dubai, United Arab Emirates
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">|</span>
+        <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Open 24 Hours / 24/7 Service
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+971503537101" class="flex items-center gap-1.5 text-slate-200 hover:text-orange-400 font-medium">
+          <i class="fas fa-phone-alt text-orange-400"></i> +971 50 353 7101
+        </a>
+        <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full font-semibold transition-colors">
+          <i class="fab fa-whatsapp"></i> WhatsApp 24/7
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header-glass sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <i class="fas fa-vest text-2xl"></i>
+          </div>
+          <div>
+            <div class="brand-logo-text text-2xl font-extrabold text-white tracking-tight flex items-center gap-1">
+              AMS <span class="text-orange-500">PRIME</span>
+            </div>
+            <div class="text-[10px] tracking-widest text-slate-300 font-semibold uppercase">
+              LLC FZE • Dubai, UAE
+            </div>
+          </div>
+        </a>
+
+        <nav class="hidden xl:flex items-center gap-6 text-sm">
+          <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav-link">Home</a>
+          <a href="about.html" target="_blank" rel="noopener noreferrer" class="nav-link">About Us</a>
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="nav-link">All Products</a>
+          <a href="products.html?category=promotional-products" class="nav-link">Promotional</a>
+          <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">School Uniform</a>
+          <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Company Uniform</a>
+          <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="nav-link">Safety Products</a>
+          <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Chef Uniform</a>
+          <a href="graduation-gown.html" target="_blank" rel="noopener noreferrer" class="nav-link">Graduation</a>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav-link">Contact Us</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="cart-drawer-toggle relative bg-slate-800/80 hover:bg-slate-700 text-white p-2.5 rounded-xl border border-slate-700 transition-colors flex items-center gap-2 text-xs font-semibold" title="View Quote Bag">
+            <i class="fas fa-shopping-bag text-orange-400 text-base"></i>
+            <span class="hidden md:inline">Quote Bag</span>
+            <span class="cart-count-badge bg-orange-500 text-white text-[11px] font-bold px-1.5 py-0.5 rounded-full min-w-5 text-center hidden">0</span>
+          </button>
+          <button onclick="openQuoteModal()" class="btn-orange text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-2">
+            <i class="fas fa-paper-plane"></i>
+            <span>Request a Quote</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 xl:hidden">
+          <button class="cart-drawer-toggle relative bg-slate-800 text-white p-2 rounded-lg border border-slate-700">
+            <i class="fas fa-shopping-bag text-orange-400"></i>
+            <span class="cart-count-badge bg-orange-500 text-white text-[10px] font-bold px-1 rounded-full absolute -top-1 -right-1 hidden">0</span>
+          </button>
+          <button id="mobileMenuBtn" class="text-white p-2 rounded-lg hover:bg-slate-800">
+            <i class="fas fa-bars text-xl text-orange-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileMenuDrawer" class="hidden xl:hidden bg-slate-900 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Home</a>
+      <a href="about.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">About Us</a>
+      <a href="products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">All Products</a>
+      <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">School Uniform</a>
+      <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Company Uniform</a>
+      <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Safety Products</a>
+      <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Chef Uniform</a>
+      <a href="graduation-gown.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Graduation Gown</a>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB STRIP -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2 flex-wrap">
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-600">Home</a>
+      <i class="fas fa-chevron-right text-[10px] text-slate-400"></i>
+      <a href="products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-600">Products</a>
+      <i class="fas fa-chevron-right text-[10px] text-slate-400"></i>
+      <span id="breadcrumbCategory" class="text-slate-600">Category</span>
+      <i class="fas fa-chevron-right text-[10px] text-slate-400"></i>
+      <span id="breadcrumbTitle" class="text-orange-600 font-bold truncate max-w-xs">Product Details</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT MAIN DETAILS SECTION -->
+  <section class="py-12 bg-white flex-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Product Image Showcase -->
+        <div class="lg:col-span-6">
+          <div class="sticky top-28">
+            <div class="relative bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
+              <img id="detailProductImage" src="/assets/school-uniform-B8kgz3uF.jpg" alt="Product" class="w-full h-[450px] object-cover object-center" />
+              <span class="product-watermark" aria-label="AMS Prime LLC">AMS <b>PRIME</b> <small>LLC</small></span>
+              <div class="absolute top-4 left-4 flex flex-col gap-2">
+                <span id="detailCategoryBadge" class="badge-navy text-xs">Category</span>
+                <span id="detailBadge" class="badge-orange text-xs">Premium Quality</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-lg border border-slate-700">
+                <i class="fas fa-shield-alt text-orange-400 mr-1"></i> AMS Prime Verified UAE Spec
+              </div>
+            </div>
+
+            <!-- Trust highlights under image -->
+            <div class="grid grid-cols-3 gap-3 mt-4 text-center text-xs">
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <i class="fas fa-certificate text-orange-500 mb-1 text-base block"></i>
+                <span class="font-bold text-slate-800">ISO Standards</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <i class="fas fa-clock text-blue-600 mb-1 text-base block"></i>
+                <span class="font-bold text-slate-800">24/7 Availability</span>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+                <i class="fas fa-truck-fast text-emerald-600 mb-1 text-base block"></i>
+                <span class="font-bold text-slate-800">Dubai / UAE Dispatch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Specs, Pricing, Customization & Actions -->
+        <div class="lg:col-span-6 flex flex-col">
+          <div class="mb-4">
+            <span id="detailCategorySubtitle" class="text-xs font-extrabold text-orange-600 uppercase tracking-widest">B2B Uniform Solution</span>
+            <h1 id="detailProductName" class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1 mb-2 tracking-tight">Product Title</h1>
+            <p id="detailProductSubtitle" class="text-sm font-semibold text-slate-500 mb-4">Product Subtitle</p>
+          </div>
+
+          <!-- Price & B2B Quote Notice -->
+          <div class="p-4 bg-orange-50 border border-orange-200 rounded-2xl mb-6 flex items-center justify-between">
+            <div>
+              <div class="text-xs text-orange-800 font-semibold uppercase tracking-wider">Wholesale / Institutional Price</div>
+              <div class="text-2xl font-black text-slate-900">Request a Quote</div>
+            </div>
+            <div class="text-right">
+              <span class="badge-orange text-xs">Bulk Discounts Available</span>
+              <div class="text-[11px] text-slate-500 mt-1">Official B2B quotation provided</div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-6">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Product Description</h3>
+            <p id="detailFullDesc" class="text-sm text-slate-600 leading-relaxed">
+              Product full description goes here.
+            </p>
+          </div>
+
+          <!-- Key Features -->
+          <div class="mb-6">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">Key Features & Benefits</h3>
+            <ul id="detailFeaturesList" class="space-y-2 text-xs text-slate-700">
+              <!-- Rendered via JS -->
+            </ul>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="mb-6" id="sizeSelectorWrapper">
+            <label class="block text-xs font-bold text-slate-900 uppercase tracking-wider mb-2">Select Size / Fit Option</label>
+            <div id="detailSizesContainer" class="flex flex-wrap gap-2">
+              <!-- Size pills -->
+            </div>
+          </div>
+
+          <!-- Color Options -->
+          <div class="mb-6" id="colorSelectorWrapper">
+            <label class="block text-xs font-bold text-slate-900 uppercase tracking-wider mb-2">Standard Color Range</label>
+            <div id="detailColorsContainer" class="flex flex-wrap gap-2">
+              <!-- Color pills -->
+            </div>
+          </div>
+
+          <!-- Quantity Stepper & Action Buttons -->
+          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 mb-8 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-700 uppercase">Estimated Order Quantity:</span>
+              <div class="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-sm">
+                <button id="qtyMinusBtn" class="px-3.5 py-2 hover:bg-slate-100 text-slate-700 font-bold text-base transition-colors">−</button>
+                <input id="detailQtyInput" type="number" min="1" value="50" class="w-16 text-center font-bold text-sm border-none focus:outline-none" />
+                <button id="qtyPlusBtn" class="px-3.5 py-2 hover:bg-slate-100 text-slate-700 font-bold text-base transition-colors">+</button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <button id="detailAddToCartBtn" class="btn-navy py-3.5 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+                <i class="fas fa-shopping-bag text-orange-400"></i>
+                <span>Add to Quote Bag</span>
+              </button>
+              <button id="detailWhatsAppBtn" class="bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all hover:scale-[1.02]">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>WhatsApp Quote Now</span>
+              </button>
+            </div>
+
+            <button onclick="openCurrentProductQuoteModal()" class="w-full btn-orange py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+              <i class="fas fa-file-invoice"></i> Submit RFQ Form for This Item
+            </button>
+          </div>
+
+          <!-- Technical Specs Table -->
+          <div>
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">Technical Specifications</h3>
+            <div class="border border-slate-200 rounded-xl overflow-hidden text-xs">
+              <div class="grid grid-cols-3 p-3 spec-row border-b border-slate-200">
+                <span class="font-bold text-slate-500">Fabric / Material</span>
+                <span id="detailSpecFabric" class="col-span-2 text-slate-800 font-medium">Standard</span>
+              </div>
+              <div class="grid grid-cols-3 p-3 spec-row border-b border-slate-200">
+                <span class="font-bold text-slate-500">Minimum Order</span>
+                <span id="detailSpecMOQ" class="col-span-2 text-slate-800 font-medium">Bulk supply available</span>
+              </div>
+              <div class="grid grid-cols-3 p-3 spec-row border-b border-slate-200">
+                <span class="font-bold text-slate-500">Custom Branding</span>
+                <span class="col-span-2 text-slate-800 font-medium">Precision Computerized Embroidery, Screen Printing & Heat Seal</span>
+              </div>
+              <div class="grid grid-cols-3 p-3 spec-row">
+                <span class="font-bold text-slate-500">Dispatch Origin</span>
+                <span class="col-span-2 text-slate-800 font-medium">Dubai Central Logistics Hub, UAE (24/7 Operations)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class="py-16 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-900">Related Products in Catalog</h2>
+          <p class="text-xs text-slate-500 mt-1">Explore complementing uniforms and safety solutions.</p>
+        </div>
+        <a href="products.html" target="_blank" rel="noopener noreferrer" class="btn-outline-orange text-xs px-4 py-2 rounded-xl font-bold">
+          View All Products
+        </a>
+      </div>
+      <div id="relatedProductsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <div class="brand-logo-text text-2xl font-black text-white flex items-center gap-2 mb-3">
+            <span class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-base"><i class="fas fa-vest"></i></span>
+            AMS <span class="text-orange-500">PRIME</span> LLC FZE
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6">
+            Dubai, UAE wholesale uniform manufacturer and safety gear supplier. 24/7 client service and bulk corporate quotations.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300">
+            <div><i class="fas fa-map-marker-alt text-orange-500 w-4"></i> Dubai, United Arab Emirates</div>
+            <div><i class="fas fa-phone-alt text-orange-500 w-4"></i> <a href="tel:+971503537101" class="hover:text-orange-400 font-semibold">+971 50 353 7101</a></div>
+            <div><i class="fab fa-whatsapp text-emerald-400 w-4 text-sm"></i> <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 font-semibold">+971 50 353 7101 (24/7)</a></div>
+            <div><i class="fas fa-clock text-orange-500 w-4"></i> <span class="text-emerald-400 font-bold">Open 24 Hours / 24/7</span></div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">All Products</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">School Uniform</a></li>
+            <li><a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Company Uniform</a></li>
+            <li><a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Safety Products</a></li>
+            <li><a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Chef Uniform</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Product Line</h4>
+          <p class="text-xs text-slate-400">Need specific customized sizes, Pantone colors, or technical safety datasheets?</p>
+          <a href="tel:+971503537101" class="mt-3 inline-block font-bold text-orange-400 text-sm">+971 50 353 7101</a>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 text-center sm:text-left">
+        © 2026 <strong>AMS PRIME LLC FZE</strong>. Dubai, UAE. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp 24/7">
+    <div class="wa-ping"></div>
+    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+    <span class="font-bold">WhatsApp 24/7</span>
+  </a>
+
+  <!-- CART DRAWER & MODAL -->
+  <div id="cartBackdrop" class="drawer-backdrop"></div>
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="p-5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <i class="fas fa-shopping-bag text-orange-400 text-lg"></i>
+        <h3 class="font-bold text-base">Your Quote Bag</h3>
+      </div>
+      <button id="closeCartDrawer" class="text-slate-400 hover:text-white p-1 rounded-lg"><i class="fas fa-times text-lg"></i></button>
+    </div>
+    <div id="cartItemsList" class="flex-1 overflow-y-auto p-4"></div>
+    <div id="cartEmptyState" class="p-8 text-center my-auto">
+      <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-box-open"></i></div>
+      <h4 class="text-base font-bold text-slate-800 mb-1">Your Quote Bag is Empty</h4>
+      <p class="text-xs text-slate-500">Add products to submit a quick wholesale quote request.</p>
+    </div>
+    <div id="cartDrawerFooter" class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+      <button onclick="sendCartViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-md">
+        <i class="fab fa-whatsapp text-lg"></i> <span>Send Quote via WhatsApp</span>
+      </button>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="cart.html" target="_blank" rel="noopener noreferrer" class="btn-navy text-center py-2.5 rounded-xl text-xs font-bold">Review Full RFQ</a>
+        <button onclick="clearCart()" class="text-slate-600 hover:text-red-600 text-xs font-semibold py-2.5">Clear Bag</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="quoteModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 my-8">
+      <button id="closeQuoteModal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i class="fas fa-times text-lg"></i></button>
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-file-invoice"></i></div>
+        <h3 class="text-2xl font-extrabold text-slate-900">Request a Product Quote</h3>
+        <p class="text-xs text-slate-500 mt-1">AMS PRIME LLC FZE • Dubai, UAE • 24/7 Availability</p>
+      </div>
+      <form id="quoteRequestForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name *</label>
+          <input type="text" name="clientName" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Organization</label>
+          <input type="text" name="companyName" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone / WhatsApp *</label>
+            <input type="tel" name="clientPhone" required placeholder="+971 50 XXX XXXX" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Product</label>
+            <select id="quoteProductSelect" name="productInterest" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500">
+              <option value="Current Product">Current Product</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Requirements & Quantities</label>
+          <textarea name="clientMessage" rows="3" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500"></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" id="cancelQuoteModal" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-slate-100 text-xs font-bold">Cancel</button>
+          <button type="submit" class="btn-orange px-6 py-2.5 rounded-lg text-xs font-bold flex items-center gap-2">
+            <i class="fab fa-whatsapp text-sm"></i> <span>Send via WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    let activeProduct = null;
+    let selectedSize = "";
+    let selectedColor = "";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const prodId = urlParams.get("id") || "school-uniform";
+      activeProduct = getProductById(prodId) || getAllProducts()[0];
+
+      if (!activeProduct) return;
+
+      // Update Page Meta
+      document.title = `${activeProduct.name} | AMS PRIME LLC FZE | Dubai, UAE`;
+      document.getElementById("pageTitle").textContent = `${activeProduct.name} | AMS PRIME LLC FZE`;
+      document.getElementById("breadcrumbCategory").textContent = activeProduct.categoryName;
+      document.getElementById("breadcrumbTitle").textContent = activeProduct.name;
+
+      // Image & Badges
+      document.getElementById("detailProductImage").src = activeProduct.image;
+      document.getElementById("detailProductImage").alt = activeProduct.name;
+      document.getElementById("detailCategoryBadge").textContent = activeProduct.categoryName;
+      if (activeProduct.badge) {
+        document.getElementById("detailBadge").textContent = activeProduct.badge;
+      } else {
+        document.getElementById("detailBadge").style.display = "none";
+      }
+
+      // Title & Descriptions
+      document.getElementById("detailCategorySubtitle").textContent = activeProduct.categoryName;
+      document.getElementById("detailProductName").textContent = activeProduct.name;
+      document.getElementById("detailProductSubtitle").textContent = activeProduct.subtitle || "";
+      document.getElementById("detailFullDesc").textContent = activeProduct.fullDesc || activeProduct.shortDesc;
+
+      // Features
+      const featuresList = document.getElementById("detailFeaturesList");
+      if (activeProduct.features && activeProduct.features.length) {
+        featuresList.innerHTML = activeProduct.features.map(f => `
+          <li class="flex items-start gap-2">
+            <i class="fas fa-check-circle text-orange-500 mt-0.5 shrink-0"></i>
+            <span>${f}</span>
+          </li>
+        `).join("");
+      }
+
+      // Specs
+      document.getElementById("detailSpecFabric").textContent = activeProduct.fabric || "Premium Industrial Grade";
+      document.getElementById("detailSpecMOQ").textContent = activeProduct.minOrderQty || "Bulk Supply (B2B)";
+
+      // Sizes
+      const sizesContainer = document.getElementById("detailSizesContainer");
+      if (activeProduct.sizes && activeProduct.sizes.length) {
+        selectedSize = activeProduct.sizes[0];
+        sizesContainer.innerHTML = activeProduct.sizes.map((s, idx) => `
+          <button class="size-pill px-3 py-1.5 rounded-lg border text-xs font-bold transition-all ${idx === 0 ? 'bg-orange-500 text-white border-orange-500 shadow-sm' : 'bg-white text-slate-700 border-slate-300 hover:border-orange-400'}" data-size="${s}">
+            ${s}
+          </button>
+        `).join("");
+
+        sizesContainer.querySelectorAll(".size-pill").forEach(btn => {
+          btn.addEventListener("click", () => {
+            sizesContainer.querySelectorAll(".size-pill").forEach(b => {
+              b.classList.remove("bg-orange-500", "text-white", "border-orange-500", "shadow-sm");
+              b.classList.add("bg-white", "text-slate-700", "border-slate-300");
+            });
+            btn.classList.add("bg-orange-500", "text-white", "border-orange-500", "shadow-sm");
+            btn.classList.remove("bg-white", "text-slate-700", "border-slate-300");
+            selectedSize = btn.dataset.size;
+          });
+        });
+      } else {
+        document.getElementById("sizeSelectorWrapper").style.display = "none";
+      }
+
+      // Colors
+      const colorsContainer = document.getElementById("detailColorsContainer");
+      if (activeProduct.colors && activeProduct.colors.length) {
+        selectedColor = activeProduct.colors[0];
+        colorsContainer.innerHTML = activeProduct.colors.map((c, idx) => `
+          <button class="color-pill px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${idx === 0 ? 'bg-slate-900 text-white border-slate-900 shadow-sm' : 'bg-white text-slate-700 border-slate-300 hover:border-slate-500'}" data-color="${c}">
+            ${c}
+          </button>
+        `).join("");
+
+        colorsContainer.querySelectorAll(".color-pill").forEach(btn => {
+          btn.addEventListener("click", () => {
+            colorsContainer.querySelectorAll(".color-pill").forEach(b => {
+              b.classList.remove("bg-slate-900", "text-white", "border-slate-900", "shadow-sm");
+              b.classList.add("bg-white", "text-slate-700", "border-slate-300");
+            });
+            btn.classList.add("bg-slate-900", "text-white", "border-slate-900", "shadow-sm");
+            btn.classList.remove("bg-white", "text-slate-700", "border-slate-300");
+            selectedColor = btn.dataset.color;
+          });
+        });
+      } else {
+        document.getElementById("colorSelectorWrapper").style.display = "none";
+      }
+
+      // Quantity Stepper
+      const qtyInput = document.getElementById("detailQtyInput");
+      document.getElementById("qtyMinusBtn").addEventListener("click", () => {
+        qtyInput.value = Math.max(1, (parseInt(qtyInput.value) || 1) - 10);
+      });
+      document.getElementById("qtyPlusBtn").addEventListener("click", () => {
+        qtyInput.value = (parseInt(qtyInput.value) || 1) + 10;
+      });
+
+      // Add To Cart
+      document.getElementById("detailAddToCartBtn").addEventListener("click", () => {
+        const qty = parseInt(qtyInput.value) || 1;
+        addToCart(activeProduct.id, qty, {
+          size: selectedSize,
+          color: selectedColor,
+          notes: "Inquiry from product details page"
+        });
+      });
+
+      // WhatsApp Direct Inquire
+      document.getElementById("detailWhatsAppBtn").addEventListener("click", () => {
+        const qty = parseInt(qtyInput.value) || 1;
+        let text = `Hello AMS PRIME LLC FZE (Dubai, UAE),\n\n`;
+        text += `I would like to request an official wholesale quotation for:\n`;
+        text += `*${activeProduct.name}*\n`;
+        text += `• Category: ${activeProduct.categoryName}\n`;
+        text += `• Quantity: ${qty} units\n`;
+        if (selectedSize) text += `• Selected Size: ${selectedSize}\n`;
+        if (selectedColor) text += `• Preferred Color: ${selectedColor}\n`;
+        text += `\nPlease provide bulk pricing, delivery timelines, and embroidery options. Thank you!`;
+        window.open(`https://wa.me/971503537101?text=${encodeURIComponent(text)}`, "_blank");
+      });
+
+      // Related Products
+      const relatedGrid = document.getElementById("relatedProductsGrid");
+      if (relatedGrid) {
+        const related = getAllProducts().filter(p => p.id !== activeProduct.id).slice(0, 4);
+        relatedGrid.innerHTML = related.map(p => generateProductCardHTML(p)).join("");
+      }
+    });
+
+    function openCurrentProductQuoteModal() {
+      if (activeProduct) {
+        openQuoteModal(activeProduct.name);
+      } else {
+        openQuoteModal();
+      }
+    }
+  </script>
+</body>
+</html>

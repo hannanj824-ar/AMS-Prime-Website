@@ -1,0 +1,412 @@
+/* AMS PRIME LLC FZE & AMJAD GARMENTS - Official Stylesheet */
+/* Locations: Dubai & Sharjah, United Arab Emirates */
+/* Brand Colors: Deep Corporate Navy (#071224, #0B1B3D, #132752), Pure White (#FFFFFF), High-Vis Orange (#FF6B00, #EA580C), UAE Gold (#D97706) */
+
+:root {
+  --primary-navy: #0B1B3D;
+  --dark-navy: #060e1f;
+  --deep-space: #071224;
+  --light-navy: #132752;
+  --surface-navy: #0e2048;
+  --accent-orange: #FF6B00;
+  --accent-orange-hover: #E65A00;
+  --accent-orange-light: #FFF0E6;
+  --accent-gold: #D97706;
+  --accent-gold-light: #FEF3C7;
+  --neutral-50: #F8FAFC;
+  --neutral-100: #F1F5F9;
+  --neutral-200: #E2E8F0;
+  --neutral-300: #CBD5E1;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1E293B;
+  --neutral-900: #0F172A;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1B3D;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF6B00;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e65a00;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* TOPBAR */
+.topbar-gradient {
+  background: linear-gradient(90deg, #050c1b 0%, #0B1B3D 45%, #142a54 80%, #1e3a6d 100%);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+/* HEADER GLASS */
+.header-glass {
+  background: rgba(7, 18, 36, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 2px solid rgba(255, 107, 0, 0.28);
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.25s ease;
+  font-weight: 600;
+  color: #e2e8f0;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+.nav-link:hover, .nav-link.active {
+  color: #FF6B00;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF6B00;
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+/* UNIQUE PATTERNS & BACKGROUNDS */
+.bg-carbon-mesh {
+  background-color: #071224;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(30, 58, 138, 0.3) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+}
+
+.bg-pattern-dots {
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+.bg-luxury-gradient {
+  background: linear-gradient(135deg, #071224 0%, #0B1B3D 50%, #173266 100%);
+}
+
+.hero-gradient-overlay {
+  background: linear-gradient(135deg, rgba(5, 12, 27, 0.94) 0%, rgba(11, 27, 61, 0.86) 55%, rgba(255, 107, 0, 0.42) 100%);
+}
+
+/* BUTTONS */
+.btn-orange {
+  background: linear-gradient(135deg, #FF6B00 0%, #FA5A00 100%);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.35);
+  font-weight: 700;
+}
+.btn-orange:hover {
+  background: linear-gradient(135deg, #f05e00 0%, #e65100 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 22px rgba(255, 107, 0, 0.5);
+}
+
+.btn-navy {
+  background-color: #0B1B3D;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transition: all 0.25s ease;
+  font-weight: 700;
+}
+.btn-navy:hover {
+  background-color: #152d5e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(11, 27, 61, 0.35);
+}
+
+.btn-outline-orange {
+  border: 2px solid #FF6B00;
+  color: #FF6B00;
+  background-color: transparent;
+  transition: all 0.25s ease;
+  font-weight: 700;
+}
+.btn-outline-orange:hover {
+  background-color: #FF6B00;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 107, 0, 0.3);
+}
+
+/* PRODUCT CARD & WATERMARK LOGO OVERLAY */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.125rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 32px -10px rgba(11, 27, 61, 0.16), 0 10px 18px -6px rgba(255, 107, 0, 0.12);
+  border-color: #cbd5e1;
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 270px;
+  background-color: #0B1B3D;
+}
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-image-container img {
+  transform: scale(1.07);
+}
+
+/* REQUIRED: OFFICIAL AMS PRIME LLC WATERMARK LOGO ON EVERY PICTURE */
+.ams-prime-watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(7, 18, 36, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 107, 0, 0.6);
+  padding: 4px 9px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: transform 0.25s ease;
+}
+.product-card:hover .ams-prime-watermark {
+  transform: scale(1.04);
+  border-color: #FF6B00;
+  background: rgba(7, 18, 36, 0.95);
+}
+.ams-wm-shield {
+  color: #FF6B00;
+  font-size: 11px;
+}
+.ams-wm-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.ams-wm-dot {
+  width: 3px;
+  height: 3px;
+  background: #FF6B00;
+  border-radius: 50%;
+}
+.ams-wm-sub {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fbd38d;
+  letter-spacing: 0.04em;
+}
+
+/* BADGES */
+.badge-orange {
+  background: linear-gradient(135deg, #FF6B00 0%, #ea580c 100%);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.35);
+}
+
+.badge-navy {
+  background-color: #0B1B3D;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge-gold {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+}
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+.floating-whatsapp:hover {
+  transform: scale(1.06) translateY(-3px);
+  box-shadow: 0 14px 32px rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+}
+
+.wa-ping {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 14px;
+  height: 14px;
+  background-color: #FF6B00;
+  border-radius: 50%;
+  animation: wa-pulse 1.8s infinite;
+}
+@keyframes wa-pulse {
+  0% { transform: scale(0.9); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.3; }
+  100% { transform: scale(0.9); opacity: 1; }
+}
+
+/* SLIDE DRAWER */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.25);
+  z-index: 1050;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+.cart-drawer.open {
+  right: 0;
+}
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 18, 36, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1040;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* TOAST */
+.toast-notice {
+  position: fixed;
+  top: 90px;
+  right: 24px;
+  z-index: 1100;
+  background: #0B1B3D;
+  color: #ffffff;
+  border-left: 4px solid #FF6B00;
+  padding: 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateY(-30px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* FILTER PILLS */
+.filter-btn {
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.filter-btn:hover {
+  background-color: #e2e8f0;
+  color: #0B1B3D;
+}
+.filter-btn.active {
+  background-color: #FF6B00;
+  color: #ffffff;
+  border-color: #FF6B00;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+
+/* CATEGORY CARD GLOW */
+.category-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 30px -10px rgba(11, 27, 61, 0.2), 0 6px 14px -4px rgba(255, 107, 0, 0.15);
+}
+.category-card img {
+  transition: transform 0.5s ease;
+}
+.category-card:hover img {
+  transform: scale(1.08);
+}

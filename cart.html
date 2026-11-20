@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Bag / RFQ Manager | AMS PRIME LLC FZE | Dubai, UAE</title>
+  <meta name="description" content="Review your selected uniform and industrial safety products and submit an official Request For Quote (RFQ) to AMS PRIME LLC FZE Dubai UAE." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- TOPBAR -->
+  <div class="topbar-gradient text-white text-xs py-2.5 px-4 border-b border-orange-500/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="flex items-center gap-1.5 text-slate-200">
+          <i class="fas fa-map-marker-alt text-orange-400"></i> Dubai, United Arab Emirates
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">|</span>
+        <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Open 24 Hours / 24/7 Service
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+971503537101" class="flex items-center gap-1.5 text-slate-200 hover:text-orange-400 font-medium">
+          <i class="fas fa-phone-alt text-orange-400"></i> +971 50 353 7101
+        </a>
+        <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full font-semibold transition-colors">
+          <i class="fab fa-whatsapp"></i> WhatsApp 24/7
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header-glass sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <i class="fas fa-vest text-2xl"></i>
+          </div>
+          <div>
+            <div class="brand-logo-text text-2xl font-extrabold text-white tracking-tight flex items-center gap-1">
+              AMS <span class="text-orange-500">PRIME</span>
+            </div>
+            <div class="text-[10px] tracking-widest text-slate-300 font-semibold uppercase">
+              LLC FZE • Dubai, UAE
+            </div>
+          </div>
+        </a>
+
+        <nav class="hidden xl:flex items-center gap-6 text-sm">
+          <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav-link">Home</a>
+          <a href="about.html" target="_blank" rel="noopener noreferrer" class="nav-link">About Us</a>
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="nav-link">All Products</a>
+          <a href="products.html?category=promotional-products" class="nav-link">Promotional</a>
+          <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">School Uniform</a>
+          <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Company Uniform</a>
+          <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="nav-link">Safety Products</a>
+          <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Chef Uniform</a>
+          <a href="graduation-gown.html" target="_blank" rel="noopener noreferrer" class="nav-link">Graduation</a>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav-link">Contact Us</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="btn-outline-orange text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-2">
+            <i class="fas fa-plus"></i>
+            <span>Add More Items</span>
+          </a>
+          <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="btn-orange text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-2">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp 24/7</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 xl:hidden">
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="text-orange-400 p-2">
+            <i class="fas fa-plus-circle text-xl"></i>
+          </a>
+          <button id="mobileMenuBtn" class="text-white p-2 rounded-lg hover:bg-slate-800">
+            <i class="fas fa-bars text-xl text-orange-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileMenuDrawer" class="hidden xl:hidden bg-slate-900 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Home</a>
+      <a href="about.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">About Us</a>
+      <a href="products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">All Products</a>
+      <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">School Uniform</a>
+      <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Company Uniform</a>
+      <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Safety Products</a>
+      <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Chef Uniform</a>
+      <a href="graduation-gown.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Graduation Gown</a>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="bg-slate-900 text-white py-12 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <nav class="flex items-center gap-2 text-xs text-slate-400 mb-2">
+            <a href="index.html" class="hover:text-orange-400">Home</a>
+            <i class="fas fa-chevron-right text-[10px]"></i>
+            <span class="text-orange-400 font-semibold">Quote Bag / RFQ Manager</span>
+          </nav>
+          <h1 class="text-3xl font-extrabold text-white">Your Request For Quote (RFQ) Bag</h1>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1">Review your selected items, specify target quantities, and submit for an instant B2B quotation.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="clearCart()" class="text-xs text-slate-400 hover:text-red-400 font-semibold">
+            <i class="fas fa-trash-alt mr-1"></i> Clear All Items
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CART CONTENT -->
+  <section class="py-12 bg-white flex-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cart Items Container -->
+      <div id="fullCartContainer" class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Left: Item Table / List -->
+        <div class="lg:col-span-8">
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+            <div class="p-4 bg-slate-100 border-b border-slate-200 font-bold text-xs uppercase text-slate-700 flex items-center justify-between">
+              <span>Selected Products (<span id="cartItemsCount">0</span>)</span>
+              <span>Pricing Status: Official Quote</span>
+            </div>
+            
+            <div id="fullCartItemsList" class="divide-y divide-slate-200 p-4 space-y-4">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Continue Shopping Link -->
+          <div class="mt-6 flex items-center justify-between">
+            <a href="products.html" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-600 hover:text-orange-600 flex items-center gap-2">
+              <i class="fas fa-arrow-left"></i>
+              <span>Continue Browsing Products</span>
+            </a>
+            <span class="text-xs text-emerald-600 font-semibold">
+              <i class="fas fa-shield-alt mr-1"></i> Direct Dubai Factory Wholesale
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Dispatcher & Submission Form -->
+        <div class="lg:col-span-4">
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm sticky top-28 space-y-6">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Quotation Submission</h3>
+              <p class="text-xs text-slate-500 mt-1">Send to our 24/7 sales desk in Dubai, UAE.</p>
+            </div>
+
+            <!-- Instant WhatsApp RFQ Button -->
+            <button onclick="sendCartViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all hover:scale-[1.02]">
+              <i class="fab fa-whatsapp text-xl"></i>
+              <span>Send Full RFQ via WhatsApp</span>
+            </button>
+            <p class="text-[11px] text-slate-400 text-center">
+              Instantly formats all items, sizes, quantities, and opens WhatsApp with +971 50 353 7101.
+            </p>
+
+            <div class="relative flex py-1 items-center">
+              <div class="flex-grow border-t border-slate-200"></div>
+              <span class="flex-shrink mx-3 text-slate-400 text-[11px] uppercase font-bold">Or Submit Web RFQ</span>
+              <div class="flex-grow border-t border-slate-200"></div>
+            </div>
+
+            <!-- Client Details Form -->
+            <form id="cartRfqForm" class="space-y-3.5">
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Contact Name *</label>
+                <input type="text" name="name" required placeholder="Your Full Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs focus:outline-none focus:border-orange-500" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Company / Organization *</label>
+                <input type="text" name="company" required placeholder="Company or School Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs focus:outline-none focus:border-orange-500" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Phone / WhatsApp *</label>
+                <input type="tel" name="phone" required placeholder="+971 50 XXX XXXX" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs focus:outline-none focus:border-orange-500" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Delivery Emirate / City</label>
+                <select name="emirate" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs focus:outline-none focus:border-orange-500">
+                  <option value="Dubai">Dubai, UAE</option>
+                  <option value="Dubai">Dubai, UAE</option>
+                  <option value="Abu Dhabi">Abu Dhabi, UAE</option>
+                  <option value="Ajman">Ajman, UAE</option>
+                  <option value="Ras Al Khaimah">Ras Al Khaimah, UAE</option>
+                  <option value="Fujairah">Fujairah, UAE</option>
+                  <option value="Umm Al Quwain">Umm Al Quwain, UAE</option>
+                  <option value="GCC (KSA, Oman, Qatar)">GCC Export</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-700 uppercase mb-1">Additional Project Notes</label>
+                <textarea name="notes" rows="2" placeholder="Embroidery, urgent deadlines, sample requests..." class="w-full px-3 py-2 rounded-lg border border-slate-300 text-xs focus:outline-none focus:border-orange-500"></textarea>
+              </div>
+              <button type="submit" class="w-full btn-orange py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i>
+                <span>Submit Official RFQ Request</span>
+              </button>
+            </form>
+
+            <div class="pt-4 border-t border-slate-200 text-[11px] text-slate-500 space-y-1">
+              <div><i class="fas fa-check text-emerald-500 mr-1"></i> No upfront payment required</div>
+              <div><i class="fas fa-check text-emerald-500 mr-1"></i> Official PDF quotation issued</div>
+              <div><i class="fas fa-check text-emerald-500 mr-1"></i> Free sample consultations in UAE</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty Cart State -->
+      <div id="fullCartEmptyState" class="hidden text-center py-20">
+        <div class="w-20 h-20 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Your Quote Bag is Currently Empty</h2>
+        <p class="text-sm text-slate-500 max-w-md mx-auto mb-6">
+          You have not added any products to your quotation bag yet. Browse our comprehensive uniform and safety catalog to request B2B pricing.
+        </p>
+        <div class="flex justify-center gap-3">
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="btn-orange px-6 py-3 rounded-xl font-bold text-xs inline-flex items-center gap-2">
+            <i class="fas fa-th-large"></i> Explore Products
+          </a>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn-navy px-6 py-3 rounded-xl font-bold text-xs inline-flex items-center gap-2">
+            <i class="fas fa-envelope"></i> Contact Sales Desk
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <div class="brand-logo-text text-2xl font-black text-white flex items-center gap-2 mb-3">
+            <span class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-base"><i class="fas fa-vest"></i></span>
+            AMS <span class="text-orange-500">PRIME</span> LLC FZE
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6">
+            Dubai, UAE wholesale uniform manufacturer and safety gear supplier. 24/7 client service and bulk corporate quotations.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300">
+            <div><i class="fas fa-map-marker-alt text-orange-500 w-4"></i> Dubai, United Arab Emirates</div>
+            <div><i class="fas fa-phone-alt text-orange-500 w-4"></i> <a href="tel:+971503537101" class="hover:text-orange-400 font-semibold">+971 50 353 7101</a></div>
+            <div><i class="fab fa-whatsapp text-emerald-400 w-4 text-sm"></i> <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 font-semibold">+971 50 353 7101 (24/7)</a></div>
+            <div><i class="fas fa-clock text-orange-500 w-4"></i> <span class="text-emerald-400 font-bold">Open 24 Hours / 24/7</span></div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">All Products</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">School Uniform</a></li>
+            <li><a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Company Uniform</a></li>
+            <li><a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Safety Products</a></li>
+            <li><a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Chef Uniform</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">24/7 Sales Desk</h4>
+          <p class="text-xs text-slate-400">Call or message for urgent tender assistance and RFQs:</p>
+          <a href="tel:+971503537101" class="mt-3 inline-block font-bold text-orange-400 text-sm">+971 50 353 7101</a>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 text-center sm:text-left">
+        © 2026 <strong>AMS PRIME LLC FZE</strong>. Dubai, UAE. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp 24/7">
+    <div class="wa-ping"></div>
+    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+    <span class="font-bold">WhatsApp 24/7</span>
+  </a>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderFullCartPage();
+
+      const form = document.getElementById("cartRfqForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const cart = getCart();
+          if (cart.length === 0) {
+            alert("Your Quote Bag is empty. Please add products first.");
+            return;
+          }
+
+          const name = form.name.value.trim();
+          const company = form.company.value.trim();
+          const phone = form.phone.value.trim();
+          const emirate = form.emirate.value;
+          const notes = form.notes.value.trim();
+
+          let waText = `*Official RFQ Submission - AMS PRIME LLC FZE*\n`;
+          waText += `• Contact Person: ${name}\n`;
+          waText += `• Company / School: ${company}\n`;
+          waText += `• Phone / WhatsApp: ${phone}\n`;
+          waText += `• Delivery Destination: ${emirate}\n`;
+          if (notes) waText += `• Project Notes: ${notes}\n`;
+          waText += `\n*Requested Uniform & Safety Products (${cart.length} items):*\n`;
+
+          cart.forEach((item, idx) => {
+            waText += `${idx + 1}. ${item.name} (Qty: ${item.quantity})\n`;
+            waText += `   - Category: ${item.categoryName}\n`;
+            waText += `   - Size: ${item.size}\n`;
+            waText += `   - Color: ${item.color}\n`;
+          });
+
+          waText += `\nPlease reply with quotation, lead time, and sample availability. Thank you!`;
+
+          showToast("Opening WhatsApp with your completed RFQ details...");
+          setTimeout(() => {
+            window.open(`https://wa.me/971503537101?text=${encodeURIComponent(waText)}`, "_blank");
+          }, 800);
+        });
+      }
+    });
+
+    function renderFullCartPage() {
+      const container = document.getElementById("fullCartItemsList");
+      const cartContainer = document.getElementById("fullCartContainer");
+      const emptyState = document.getElementById("fullCartEmptyState");
+      const countSpan = document.getElementById("cartItemsCount");
+
+      const cart = getCart();
+      countSpan.textContent = cart.length;
+
+      if (cart.length === 0) {
+        cartContainer.classList.add("hidden");
+        emptyState.classList.remove("hidden");
+        return;
+      }
+
+      cartContainer.classList.remove("hidden");
+      emptyState.classList.add("hidden");
+
+      container.innerHTML = cart.map(item => `
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-white rounded-xl border border-slate-200">
+          <div class="flex items-center gap-4">
+            <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-xl border border-slate-200 shrink-0" />
+            <div>
+              <span class="badge-navy text-[10px] mb-1 inline-block">${item.categoryName}</span>
+              <h3 class="text-base font-bold text-slate-900">${item.name}</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Size: <span class="font-semibold text-slate-800">${item.size}</span> | Color: <span class="font-semibold text-slate-800">${item.color}</span></p>
+              <div class="text-[11px] text-orange-600 font-semibold mt-1">
+                <i class="fas fa-tag mr-1"></i> B2B Pricing: Request a Quote
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+            <div class="flex items-center border border-slate-300 rounded-lg overflow-hidden bg-slate-50">
+              <button onclick="updateItemQuantityFull('${item.id}', -10)" class="px-3 py-1.5 hover:bg-slate-200 text-slate-700 font-bold transition-colors">−</button>
+              <span class="px-3 py-1.5 font-bold text-slate-900 text-xs min-w-10 text-center">${item.quantity}</span>
+              <button onclick="updateItemQuantityFull('${item.id}', 10)" class="px-3 py-1.5 hover:bg-slate-200 text-slate-700 font-bold transition-colors">+</button>
+            </div>
+            <button onclick="removeItemFull('${item.id}')" class="text-slate-400 hover:text-red-600 p-2 text-sm transition-colors" title="Remove item">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function updateItemQuantityFull(productId, delta) {
+      updateItemQuantity(productId, delta);
+      renderFullCartPage();
+    }
+
+    function removeItemFull(productId) {
+      removeFromCart(productId);
+      renderFullCartPage();
+    }
+  </script>
+</body>
+</html>

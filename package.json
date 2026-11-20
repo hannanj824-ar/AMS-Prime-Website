@@ -1,0 +1,26 @@
+{
+  "name": "ams-prime-website",
+  "version": "1.0.0",
+  "description": "AMS PRIME LLC FZE - Official Multi-Page E-Commerce Website (Sharjah, UAE)",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "vite build",
+    "dev": "node server.cjs",
+    "serve": "node server.cjs",
+    "preview": "node server.cjs",
+    "vite": "vite"
+  },
+  "keywords": [
+    "uniforms",
+    "safety-products",
+    "ecommerce",
+    "sharjah",
+    "uae"
+  ],
+  "author": "AMS PRIME LLC FZE",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}

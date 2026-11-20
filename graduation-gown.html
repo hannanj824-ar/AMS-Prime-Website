@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduation Gowns & Academic Regalia | AMS PRIME LLC FZE | Dubai, UAE</title>
+  <meta name="description" content="Academic graduation gowns, mortarboard caps, tassels, and ceremony stoles for universities and schools in UAE by AMS PRIME LLC FZE Dubai." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- TOPBAR -->
+  <div class="topbar-gradient text-white text-xs py-2.5 px-4 border-b border-orange-500/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="flex items-center gap-1.5 text-slate-200">
+          <i class="fas fa-map-marker-alt text-orange-400"></i> Dubai, United Arab Emirates
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">|</span>
+        <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Open 24 Hours / 24/7 Service
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+971503537101" class="flex items-center gap-1.5 text-slate-200 hover:text-orange-400 font-medium">
+          <i class="fas fa-phone-alt text-orange-400"></i> +971 50 353 7101
+        </a>
+        <a href="https://wa.me/971503537101?text=Hello%20AMS%20Prime,%20I%20am%20inquiring%20about%20Graduation%20Gowns" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-0.5 rounded-full font-semibold transition-colors">
+          <i class="fab fa-whatsapp"></i> WhatsApp 24/7
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header-glass sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <i class="fas fa-vest text-2xl"></i>
+          </div>
+          <div>
+            <div class="brand-logo-text text-2xl font-extrabold text-white tracking-tight flex items-center gap-1">
+              AMS <span class="text-orange-500">PRIME</span>
+            </div>
+            <div class="text-[10px] tracking-widest text-slate-300 font-semibold uppercase">
+              LLC FZE • Dubai, UAE
+            </div>
+          </div>
+        </a>
+
+        <nav class="hidden xl:flex items-center gap-6 text-sm">
+          <a href="index.html" target="_blank" rel="noopener noreferrer" class="nav-link">Home</a>
+          <a href="about.html" target="_blank" rel="noopener noreferrer" class="nav-link">About Us</a>
+          <a href="products.html" target="_blank" rel="noopener noreferrer" class="nav-link">All Products</a>
+          <a href="products.html?category=promotional-products" class="nav-link">Promotional</a>
+          <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">School Uniform</a>
+          <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Company Uniform</a>
+          <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="nav-link">Safety Products</a>
+          <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="nav-link">Chef Uniform</a>
+          <a href="graduation-gown.html" class="nav-link active">Graduation</a>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="nav-link">Contact Us</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button class="cart-drawer-toggle relative bg-slate-800/80 hover:bg-slate-700 text-white p-2.5 rounded-xl border border-slate-700 transition-colors flex items-center gap-2 text-xs font-semibold" title="View Quote Bag">
+            <i class="fas fa-shopping-bag text-orange-400 text-base"></i>
+            <span class="hidden md:inline">Quote Bag</span>
+            <span class="cart-count-badge bg-orange-500 text-white text-[11px] font-bold px-1.5 py-0.5 rounded-full min-w-5 text-center hidden">0</span>
+          </button>
+          <button onclick="openQuoteModal('Graduation Gown')" class="btn-orange text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-2">
+            <i class="fas fa-paper-plane"></i>
+            <span>Request Commencement Quote</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 xl:hidden">
+          <button class="cart-drawer-toggle relative bg-slate-800 text-white p-2 rounded-lg border border-slate-700">
+            <i class="fas fa-shopping-bag text-orange-400"></i>
+            <span class="cart-count-badge bg-orange-500 text-white text-[10px] font-bold px-1 rounded-full absolute -top-1 -right-1 hidden">0</span>
+          </button>
+          <button id="mobileMenuBtn" class="text-white p-2 rounded-lg hover:bg-slate-800">
+            <i class="fas fa-bars text-xl text-orange-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileMenuDrawer" class="hidden xl:hidden bg-slate-900 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Home</a>
+      <a href="about.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">About Us</a>
+      <a href="products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">All Products</a>
+      <a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">School Uniform</a>
+      <a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Company Uniform</a>
+      <a href="safety-products.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Safety Products</a>
+      <a href="chef-uniform.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Chef Uniform</a>
+      <a href="graduation-gown.html" class="block py-2 px-3 text-orange-400 font-bold rounded-lg bg-slate-800">Graduation Gown</a>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 text-white font-medium rounded-lg hover:bg-slate-800">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- CATEGORY HERO -->
+  <section class="relative bg-slate-900 text-white py-16 lg:py-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/graduation-gown.jpg" alt="Graduation Regalia & Gowns" class="w-full h-full object-cover object-top opacity-30" />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-indigo-950/60"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold px-3 py-1 rounded-full mb-4">
+          <i class="fas fa-graduation-cap"></i> Academic Ceremonies & Regalia Division • Dubai, UAE
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+          Academic Graduation Gowns & Caps
+        </h1>
+        <p class="text-slate-200 text-base sm:text-lg mb-8 leading-relaxed">
+          Supplying prestigious universities, colleges, and high schools throughout the UAE and GCC with non-sheer matte commencement robes, mortarboards with year charms, and personalized embroidered stoles.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#graduationProductsSection" class="btn-orange px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
+            <i class="fas fa-th-large"></i> View Graduation Robes
+          </a>
+          <a href="https://wa.me/971503537101?text=Hello%20AMS%20Prime,%20we%20want%20to%20inquire%20about%20university%20graduation%20gowns" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp (+971 50 353 7101)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl shrink-0 font-bold">
+            <i class="fas fa-camera"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Anti-Flash Matte Fabric</h4>
+            <p class="text-xs text-slate-500 mt-1">High-density woven polyester that prevents light glare in commencement photography.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shrink-0 font-bold">
+            <i class="fas fa-ribbon"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Custom Satin Stoles</h4>
+            <p class="text-xs text-slate-500 mt-1">Dual-tone ceremonial stoles customized with university seals and graduation class years.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl shrink-0 font-bold">
+            <i class="fas fa-boxes-packing"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Bulk Institutional Delivery</h4>
+            <p class="text-xs text-slate-500 mt-1">Full pre-sorted sizing sets delivered on hangers or individually packaged for effortless ceremony distribution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section id="graduationProductsSection" class="py-16 bg-slate-50 flex-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-extrabold text-orange-600 uppercase tracking-widest bg-orange-100 px-3 py-1 rounded-full">
+          Commencement Regalia
+        </span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-3">
+          Graduation Robes & Cap Sets
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Engineered for Bachelor, Master, Doctorate, and High School graduation ceremonies across the United Arab Emirates.
+        </p>
+      </div>
+
+      <div id="gradGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Products populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENCEMENT TENDER BANNER -->
+  <section class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden">
+        <div class="max-w-2xl relative z-10">
+          <span class="badge-orange text-xs mb-3 inline-block">University Ceremony Packages</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold mb-4">Request a Graduation Ceremony Tender or Sample Set</h3>
+          <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+            We provide comprehensive commencement packages including doctoral hoods, velvet piping, faculty robes, and student regalia with guaranteed on-time delivery before ceremony week.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button onclick="openQuoteModal('Graduation Gown - University Tender')" class="btn-orange px-6 py-3 rounded-xl font-bold text-sm">
+              <i class="fas fa-file-invoice mr-1"></i> Request Regalia Quotation
+            </button>
+            <a href="https://wa.me/971503537101?text=Hello%20AMS%20Prime,%20we%20would%20like%20to%20request%20graduation%20gown%20samples" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
+              <i class="fab fa-whatsapp text-emerald-400"></i> WhatsApp Academic Representative
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <div class="brand-logo-text text-2xl font-black text-white flex items-center gap-2 mb-3">
+            <span class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-base"><i class="fas fa-vest"></i></span>
+            AMS <span class="text-orange-500">PRIME</span> LLC FZE
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6">
+            Dubai, UAE wholesale uniform manufacturer and safety gear supplier. 24/7 client service and bulk institutional quotations.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300">
+            <div><i class="fas fa-map-marker-alt text-orange-500 w-4"></i> Dubai, United Arab Emirates</div>
+            <div><i class="fas fa-phone-alt text-orange-500 w-4"></i> <a href="tel:+971503537101" class="hover:text-orange-400 font-semibold">+971 50 353 7101</a></div>
+            <div><i class="fab fa-whatsapp text-emerald-400 w-4 text-sm"></i> <a href="https://wa.me/971503537101" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 font-semibold">+971 50 353 7101 (24/7)</a></div>
+            <div><i class="fas fa-clock text-orange-500 w-4"></i> <span class="text-emerald-400 font-bold">Open 24 Hours / 24/7</span></div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Pages</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Home</a></li>
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">About Us</a></li>
+            <li><a href="products.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">All Products</a></li>
+            <li><a href="contact.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Regalia</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="graduation-gown.html" class="text-orange-400 font-bold">Graduation Gown</a></li>
+            <li><a href="school-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">School Uniform</a></li>
+            <li><a href="company-uniform.html" target="_blank" rel="noopener noreferrer" class="hover:text-orange-400">Company Uniform</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-orange-500 pl-2.5">Academic Liaison</h4>
+          <p class="text-xs text-slate-400">Direct university coordinator helpline for emergency graduation stock:</p>
+          <a href="tel:+971503537101" class="mt-3 inline-block font-bold text-orange-400 text-sm">+971 50 353 7101</a>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 text-center sm:text-left">
+        © 2026 <strong>AMS PRIME LLC FZE</strong>. Dubai, UAE. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/971503537101?text=Hello%20AMS%20Prime,%20I%20have%20an%20inquiry%20regarding%20Graduation%20Gowns" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="WhatsApp 24/7">
+    <div class="wa-ping"></div>
+    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+    <span class="font-bold">WhatsApp 24/7</span>
+  </a>
+
+  <!-- CART DRAWER & MODAL -->
+  <div id="cartBackdrop" class="drawer-backdrop"></div>
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="p-5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+      <div class="flex items-center gap-2.5">
+        <i class="fas fa-shopping-bag text-orange-400 text-lg"></i>
+        <h3 class="font-bold text-base">Your Quote Bag</h3>
+      </div>
+      <button id="closeCartDrawer" class="text-slate-400 hover:text-white p-1 rounded-lg"><i class="fas fa-times text-lg"></i></button>
+    </div>
+    <div id="cartItemsList" class="flex-1 overflow-y-auto p-4"></div>
+    <div id="cartEmptyState" class="p-8 text-center my-auto">
+      <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-box-open"></i></div>
+      <h4 class="text-base font-bold text-slate-800 mb-1">Your Quote Bag is Empty</h4>
+      <p class="text-xs text-slate-500">Add graduation gowns to submit a quick wholesale quote request.</p>
+    </div>
+    <div id="cartDrawerFooter" class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+      <button onclick="sendCartViaWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-md">
+        <i class="fab fa-whatsapp text-lg"></i> <span>Send Quote via WhatsApp</span>
+      </button>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="cart.html" target="_blank" rel="noopener noreferrer" class="btn-navy text-center py-2.5 rounded-xl text-xs font-bold">Review Full RFQ</a>
+        <button onclick="clearCart()" class="text-slate-600 hover:text-red-600 text-xs font-semibold py-2.5">Clear Bag</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="quoteModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 my-8">
+      <button id="closeQuoteModal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-2"><i class="fas fa-times text-lg"></i></button>
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center mx-auto mb-3 text-xl"><i class="fas fa-file-invoice"></i></div>
+        <h3 class="text-2xl font-extrabold text-slate-900">Request a Graduation Gown Quote</h3>
+        <p class="text-xs text-slate-500 mt-1">AMS PRIME LLC FZE • Dubai, UAE • 24/7 Availability</p>
+      </div>
+      <form id="quoteRequestForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name *</label>
+          <input type="text" name="clientName" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">University / School Name</label>
+          <input type="text" name="companyName" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone / WhatsApp *</label>
+            <input type="tel" name="clientPhone" required placeholder="+971 50 XXX XXXX" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Product</label>
+            <select id="quoteProductSelect" name="productInterest" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500">
+              <option value="Academic Graduation Regalia Gown & Cap Set">Academic Graduation Regalia Gown & Cap Set</option>
+              <option value="Doctoral Hood & Gown Package">Doctoral Hood & Gown Package</option>
+              <option value="Custom Embroidered Stoles Only">Custom Embroidered Stoles Only</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Estimated Graduating Cohort Size</label>
+          <textarea name="clientMessage" rows="3" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:border-orange-500"></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" id="cancelQuoteModal" class="px-4 py-2.5 rounded-lg text-slate-600 hover:bg-slate-100 text-xs font-bold">Cancel</button>
+          <button type="submit" class="btn-orange px-6 py-2.5 rounded-lg text-xs font-bold flex items-center gap-2">
+            <i class="fab fa-whatsapp text-sm"></i> <span>Send via WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("gradGrid");
+      if (container && typeof getAllProducts === "function") {
+        const gradItems = getAllProducts().filter(p => p.category === "graduation-gown");
+        container.innerHTML = gradItems.map(p => generateProductCardHTML(p)).join("");
+      }
+    });
+  </script>
+</body>
+</html>
